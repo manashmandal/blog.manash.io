@@ -26,7 +26,7 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ed533a9406b82fb8a9e9.js"
+    "url": "webpack-runtime-6d17ced1fdfd09bfa342.js"
   },
   {
     "url": "framework-3321703c33570853116c.js"
@@ -35,22 +35,14 @@ self.__precacheManifest = [
     "url": "f0e45107-2db3650071f79b58076c.js"
   },
   {
-    "url": "app-f7f4f5636962cb43cb90.js"
+    "url": "app-cdf01f800e820fc41b78.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-347556f07d0389cd99c8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "69df8bc918c52e200fe52165f103bcbe"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "c355c8040c47a63bfb3360e4b7cb6553"
-  },
-  {
-    "url": "page-data/app-data.json",
-    "revision": "09dc89e11feed816890909a617edb911"
+    "revision": "3a2cc97abca62ba02de6a319180700fc"
   },
   {
     "url": "manifest.json",
@@ -58,7 +50,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "090d9fd742c6921aa5cea9cfe382985a"
+    "revision": "8b4735b9eb6fa3853598f07fda50e5dd"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -77,12 +69,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/blog.manash.io`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/blog.manash.io/app-f7f4f5636962cb43cb90.js`))) {
+  if (!resources || !(await caches.match(`/app-cdf01f800e820fc41b78.js`))) {
     return await fetch(event.request)
   }
 
@@ -95,7 +87,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/blog.manash.io/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
