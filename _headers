@@ -1,0 +1,167 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.0ec3348ba9832a0ec0fc.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-b729c27faa6284e9ff45.js
+  Cache-Control: public, max-age=31536000, immutable
+/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-homepage-query-tsx-68f0d3ed8f8905ee7cbd.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-blog-query-tsx-f02daf32bb4945cb5aaf.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx-b760d46767d423ed5009.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-be7792d59b78da8d917e.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-31bf044d688ede323fe9.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-b63c13a6d373aa985aea.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---node-modules-gatsby-plugin-offline-app-shell-js-347556f07d0389cd99c8.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-ed533a9406b82fb8a9e9.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-3321703c33570853116c.js
+  Cache-Control: public, max-age=31536000, immutable
+/f0e45107-2db3650071f79b58076c.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-f7f4f5636962cb43cb90.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/blog.manash.io/
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-homepage-query-tsx-68f0d3ed8f8905ee7cbd.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/blog
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-blog-query-tsx-f02daf32bb4945cb5aaf.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/blog/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/tags
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tags-query-tsx-b760d46767d423ed5009.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/tags/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/introduction-to-defence-against-the-dark-arts
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-be7792d59b78da8d917e.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/introduction-to-defence-against-the-dark-arts/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/fantastic-beasts-and-where-to-find-them
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-be7792d59b78da8d917e.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/fantastic-beasts-and-where-to-find-them/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/curses-counter-curses-and-more
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-be7792d59b78da8d917e.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/curses-counter-curses-and-more/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/harry-potter-and-the-half-blood-prince
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-post-query-tsx-be7792d59b78da8d917e.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/harry-potter-and-the-half-blood-prince/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/about
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-page-query-tsx-31bf044d688ede323fe9.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/tags/dark-arts
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-b63c13a6d373aa985aea.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/tags/dark-arts/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/tags/highlight
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-b63c13a6d373aa985aea.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/tags/highlight/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/tags/novel
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-b63c13a6d373aa985aea.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/tags/novel/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/tags/tutorial
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/styles-b729c27faa6284e9ff45.js>; rel=preload; as=script
+  Link: </blog.manash.io/aed2e917f30c051bccba91aa15989a75fd0bd633-3fe325d6a7649961c5cf.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx-b63c13a6d373aa985aea.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/tags/tutorial/page-data.json>; rel=preload; as=fetch; crossorigin
+/blog.manash.io/offline-plugin-app-shell-fallback/
+  Link: </blog.manash.io/webpack-runtime-ed533a9406b82fb8a9e9.js>; rel=preload; as=script
+  Link: </blog.manash.io/framework-3321703c33570853116c.js>; rel=preload; as=script
+  Link: </blog.manash.io/f0e45107-2db3650071f79b58076c.js>; rel=preload; as=script
+  Link: </blog.manash.io/app-f7f4f5636962cb43cb90.js>; rel=preload; as=script
+  Link: </blog.manash.io/component---node-modules-gatsby-plugin-offline-app-shell-js-347556f07d0389cd99c8.js>; rel=preload; as=script
+  Link: </blog.manash.io/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </blog.manash.io/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
