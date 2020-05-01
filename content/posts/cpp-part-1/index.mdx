@@ -1,20 +1,87 @@
 ---
-title: "Learning C++ Part 1"
-date: 2020-05-01
-slug: "/cpp-part-1"
+title: "C++ Notes: part-1"
+date: 2020-05-02
+slug: "/cpp-notes-part-1"
 tags:
   - C++
-description: literals, c++
+description: literals, types, type-deduction
 ---
 
-I had a long dream of learning C++ properly, and due the lockdown during Covid19 pandemic I finally had the chance to review my learnings and fix what I knew wrong. I will be writing articles on C++ to make my learnings persistent. They won't be in depth as other articles of C++ experts. I didn't get any chance to work anywhere as a C++ developer, there might be silly or grave mistakes here and there. For the time being, I will ignore those and just move along to maintain my flow.
+import CollapseComponent from "./CollapseComponent";
 
-```cpp:title=c++
+I had a long dream of learning C++ properly, and due the lockdown during Covid19 pandemic I finally had the chance to review my learnings and fix what I knew wrong. I will be writing notes on C++ to make my learnings persistent. They won't be in depth as other articles of C++ experts. I didn't get any chance to work anywhere as a C++ developer, there might be silly or grave mistakes here and there. For the time being, I will ignore those and just move along to maintain my flow.
 
+## References
+
+Most of the codes are inpired from the book [The C++ Standard Library](https://leanpub.com/cpplibrary) by Rainer Grimm and [C++ Reference](https://en.cppreference.com/). I really like his teaching and coding style. He published multiple best C++ books.
+
+Let's begin, shall we?
+
+### Literals
+
+<CollapseComponent
+  heading="Literals"
+  text="Literals are explicit values in the program."
+/>
+
+<br />
+
+Value of literal is fixed, it can also be referred as **constants**. Literal can be value of basic types such as `int`, `bool` etc.
+
+Built in C++ literals are shown below.
+
+```cpp:title=main.cpp
 #include <iostream>
 
-int main void(){
-  std::cout << "Hello WOrld" << std::endl;
+int main(){
+  // Unsigned integer
+  int unsigned_int = u'U';
+  // Hexadecimal
+  int hex = 0x2b;
+  // Raw string
+  std::string raw = R"(Raw String)";
+  std::cout << unsigned_int << ", " << hex << ", " << raw << std::endl;
+}
+```
+
+Output
+
+```
+85, 42, Raw String
+```
+
+- Literals are not restricted to values, even `lambda` function can be a _function literal_
+
+```cpp
+lambda function[](std::string text) { return text.length(); }
+```
+
+### Raw string literals
+
+Anything between the delimiters of raw string becomes a part of the string.
+
+```cpp
+#include <iostream>
+
+const char* string1 = R"foo(
+  Hello
+  World
+  )foo";
+
+int main (){
+  std::cout << string1 << std::endl;
 }
 
 ```
+
+Output
+
+```
+
+  Hello
+  World
+
+
+```
+
+### User defined literals
