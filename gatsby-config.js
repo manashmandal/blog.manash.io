@@ -1,10 +1,17 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    author: "Manash",
+    siteTitle: `Manash's Blog`,
+    siteHeadline: ``,
+    siteUrl: "https://blog.manash.io",
+    siteDescription: "Ola",
+    siteLanguage: "en",
+    siteImage: "",
   },
   plugins: [
     {
@@ -23,12 +30,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/manashmandal`,
           },
         ],
       },
@@ -67,4 +70,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
-}
+};
