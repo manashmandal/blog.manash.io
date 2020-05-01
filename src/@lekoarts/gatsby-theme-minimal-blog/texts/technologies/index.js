@@ -8,8 +8,8 @@ import go from "./go.svg";
 import aws from "./aws.svg";
 import k8s from "./k8s.svg";
 
-export const Technologies = [
-  cpp,
+export const Technologies = {
+  "C++": cpp,
   python,
   javascript,
   go,
@@ -18,4 +18,4 @@ export const Technologies = [
   liunx,
   aws,
   // k8s,
-];
+};

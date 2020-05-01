@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 import ItemTags from "./item-tags";
 import { Row, Col } from "antd";
 import "antd/dist/antd.css";
-import cpp from "../texts/technologies/cpp.svg";
+import { Technologies } from "../texts/technologies";
 import { Keywords } from "./keywords";
 
 type BlogListItemProps = {
@@ -27,10 +27,7 @@ type BlogListItemProps = {
 
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Row>
-    <Col>
-      <img src={cpp} width={50} />
-    </Col>
-    <Col>
+    <Col span={24 - 2 * post.tags?.length} xs={24 - 6 * post.tags?.length}>
       <Box mb={4}>
         <TLink
           as={Link}
@@ -58,6 +55,15 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
         </p>
       </Box>
     </Col>
+    {post.tags?.map((t) => (
+      <Col style={{ float: "right" }} span={2} xs={6}>
+        <img
+          src={Technologies[t.name]}
+          width={50}
+          style={{ marginRight: "15px" }}
+        />
+      </Col>
+    ))}
   </Row>
 );
 
