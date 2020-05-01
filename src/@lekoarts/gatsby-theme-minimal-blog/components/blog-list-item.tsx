@@ -55,8 +55,8 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
         </p>
       </Box>
     </Col>
-    {post.tags?.map((t) => (
-      <Col style={{ float: "right" }} xs={4} lg={2}>
+    {post.tags?.map((t, idx) => (
+      <Col style={{ float: "right" }} xs={4} lg={2} key={idx}>
         <img
           src={Technologies[t.name]}
           width={50}

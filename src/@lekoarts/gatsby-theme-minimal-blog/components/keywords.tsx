@@ -11,9 +11,10 @@ type KeywordsProps = {
 };
 
 export const Keywords = ({ description, delimiter }: KeywordsProps) => (
-  <h1>
-    {description.split(delimiter).map((item) => (
+  <span style={{ marginLeft: "10px" }}>
+    {description.split(delimiter).map((item, idx) => (
       <Tag
+        key={idx}
         style={{ fontSize: "16px" }}
         color={_.sample([
           "magenta",
@@ -30,7 +31,7 @@ export const Keywords = ({ description, delimiter }: KeywordsProps) => (
         {item}
       </Tag>
     ))}
-  </h1>
+  </span>
 );
 
 // export Keywords;
