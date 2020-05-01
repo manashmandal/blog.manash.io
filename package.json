@@ -18,6 +18,11 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^2.3.1",
+    "@vx/gradient": "^0.0.195",
+    "@vx/group": "^0.0.195",
+    "@vx/mock-data": "^0.0.195",
+    "@vx/scale": "^0.0.195",
+    "@vx/shape": "^0.0.195",
     "antd": "^4.2.0",
     "gatsby": "^2.20.36",
     "gatsby-plugin-cname": "^1.0.0",
@@ -28,7 +33,8 @@
     "gatsby-plugin-sitemap": "^2.2.19",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-spring": "^8.0.27"
   },
   "devDependencies": {
     "cross-env": "^5.2.0"

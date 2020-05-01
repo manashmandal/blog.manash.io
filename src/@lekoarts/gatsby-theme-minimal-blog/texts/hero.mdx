@@ -1,0 +1,18 @@
+# Hi
+
+I will be writing here about programming languages, software engineering and development.
+
+import { Technologies } from "./technologies";
+import { Col, Row } from "antd";
+
+<Row>
+  <Col xs={10} sm={8} md={6} lg={4} xl={2}></Col>
+  <Col>
+    <span>
+      {Technologies.map((d, i) => (
+        <img src={d} key={i} width={100} style={{ marginRight: "10px" }} />
+      ))}
+    </span>
+  </Col>
+  <Col xs={10} sm={8} md={6} lg={4} xl={2}></Col>
+</Row>
