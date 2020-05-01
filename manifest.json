@@ -1,4 +1,6 @@
 {
   "main.js": "render-page.js",
-  "main.js.map": "render-page.js.map"
+  "main.js.map": "render-page.js.map",
+  "static/k8s.svg": "static/k8s-3a15213ddffc497c558cabac9f1e2c2b.svg",
+  "static/linux.svg": "static/linux-3e0dfa149c2251e1ce4a8e59abd85cb4.svg"
 }
