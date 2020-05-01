@@ -21,6 +21,7 @@
     "@vx/gradient": "^0.0.195",
     "@vx/group": "^0.0.195",
     "@vx/mock-data": "^0.0.195",
+    "@vx/responsive": "^0.0.195",
     "@vx/scale": "^0.0.195",
     "@vx/shape": "^0.0.195",
     "antd": "^4.2.0",
