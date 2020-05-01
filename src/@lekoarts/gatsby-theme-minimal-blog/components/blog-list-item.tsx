@@ -27,7 +27,7 @@ type BlogListItemProps = {
 
 const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Row>
-    <Col span={24 - 2 * post.tags?.length} xs={24 - 6 * post.tags?.length}>
+    <Col lg={24 - 2 * post.tags?.length} xs={24 - 4 * post.tags?.length}>
       <Box mb={4}>
         <TLink
           as={Link}
@@ -56,7 +56,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
       </Box>
     </Col>
     {post.tags?.map((t) => (
-      <Col style={{ float: "right" }} span={2} xs={6}>
+      <Col style={{ float: "right" }} xs={4} lg={2}>
         <img
           src={Technologies[t.name]}
           width={50}
