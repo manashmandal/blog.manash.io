@@ -4,12 +4,12 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Musings of a software craftsman`,
     author: "Manash",
     siteTitle: `Manash's Blog`,
     siteHeadline: ``,
     siteUrl: "https://blog.manash.io",
-    siteDescription: "Ola",
+    siteDescription: "Musings of a software craftsman",
     siteLanguage: "en",
     siteImage: "",
   },

@@ -1,10 +1,10 @@
 ---
-title: "C++ Notes: part-1"
+title: "C++ Notes: Literals [Part-1]"
 date: 2020-05-02
-slug: "/cpp-notes-part-1"
+slug: "/cpp-notes-part-1-literals"
 tags:
   - C++
-description: literals, types, type-deduction
+description: literals
 ---
 
 import CollapseComponent from "./CollapseComponent";
@@ -13,7 +13,7 @@ I had a long dream of learning C++ properly, and due the lockdown during Covid19
 
 ## References
 
-Most of the codes are inpired from the book [The C++ Standard Library](https://leanpub.com/cpplibrary) by Rainer Grimm and [C++ Reference](https://en.cppreference.com/). I really like his teaching and coding style. He published multiple best C++ books.
+Most of the codes are inpired from the book [The C++ Standard Library](https://leanpub.com/cpplibrary) by Rainer Grimm and [C++ Reference](https://en.cppreference.com/). I really like his teaching and coding style. He published multiple outstanding C++ books.
 
 Let's begin, shall we?
 
@@ -84,4 +84,213 @@ Output
 
 ```
 
-### User defined literals
+### Built in literals
+
+Let's see a self explanatory example.
+
+```cpp
+#include <iostream>
+// We need to include chrono to work
+#include <chrono>
+
+// We are going to use c++ standard library's chrono literals
+using namespace std::chrono_literals;
+
+int main(){
+  // Let's declare 1 hour by using h literal
+  std::chrono::hours one_hour = 1h;
+  // Let's convert one hour to seconds
+  auto time_in_seconds = std::chrono::duration_cast<std::chrono::seconds>(one_hour);
+  std::cout << time_in_seconds.count() << std::endl;
+}
+```
+
+#### Output
+
+<br />
+
+```
+3600
+```
+
+<br />
+
+#### User defined literals
+
+<br />
+
+There are six major categories of literals in C++.
+
+1. integer
+2. chracter
+3. floating-point
+4. string
+5. boolean
+6. pointer
+
+##### User defined literal operator signatures
+
+<br />
+
+```cpp
+ReturnType operator "" _a(unsigned long long int);   // Literal operator for user-defined INTEGRAL literal
+ReturnType operator "" _b(long double);              // Literal operator for user-defined FLOATING literal
+ReturnType operator "" _c(char);                     // Literal operator for user-defined CHARACTER literal
+ReturnType operator "" _d(wchar_t);                  // Literal operator for user-defined CHARACTER literal
+ReturnType operator "" _e(char16_t);                 // Literal operator for user-defined CHARACTER literal
+ReturnType operator "" _f(char32_t);                 // Literal operator for user-defined CHARACTER literal
+ReturnType operator "" _g(const char*, size_t);      // Literal operator for user-defined STRING literal
+ReturnType operator "" _h(const wchar_t*, size_t);   // Literal operator for user-defined STRING literal
+ReturnType operator "" _i(const char16_t*, size_t);  // Literal operator for user-defined STRING literal
+ReturnType operator "" _g(const char32_t*, size_t);  // Literal operator for user-defined STRING literal
+ReturnType operator "" _r(const char*);              // Raw literal operator
+template<char...> ReturnType operator "" _t();       // Literal operator template
+```
+
+<br />
+
+#### Cooked vs Raw literals
+
+A user-defined literal that accepts as input whatever type the compiler assigned to the literal value is unofficially known as `cooked literal`.
+
+Operator defined by the user which accepts the literal as sequence of char values, then it's up to the user how to interpret the literal is called `raw literal`.
+
+Let's take a look at an example.
+
+```cpp
+#include <iostream>
+#include <string>
+
+double operator"" _km(const char *km){
+  std::cout << "Raw _km" << std::endl;
+  // Converting const char* to double, requires <string>
+  return std::stod(km);
+}
+
+// Based on the signature above
+double operator"" _m(unsigned long long meter){
+  std::cout << "Cooked _m" << std::endl;
+  return double(meter);
+}
+
+int main(){
+  auto distance_km = 100.5_km;
+  std::cout << distance_km << std::endl;
+  std::cout << "Type: " << typeid(distance_km).name() << std::endl;
+
+  std::cout << std::endl;
+
+  auto distance_m = 100_m;
+  std::cout << distance_m << std::endl;
+  std::cout << "Type: " << typeid(distance_m).name() << std::endl;
+}
+```
+
+<br />
+
+#### Output
+
+<br />
+
+```
+Raw _km
+100.5
+Type: d
+
+Cooked _m
+100
+Type: d
+```
+
+<br />
+
+If we implement both cooked and raw both forms the compiler will use the cooked form since it has higher priority.
+
+<br />
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+double operator"" _km(const char* km){
+    std::cout << "Raw _km" << std::endl;
+    return std::stod(km);
+}
+
+long double operator"" _km(long double km){
+    std::cout << "Cooked _km" << std::endl;
+    return km;
+}
+
+int main()
+{
+    auto distance_km = 100.0_km;
+    std::cout << distance_km << std::endl;
+}
+```
+
+<br />
+
+#### Output
+
+<br />
+
+```
+Cooked _km
+100
+```
+
+<br />
+
+### Usecase
+
+Always save distance as meter.
+
+```cpp
+#include <iostream>
+#include <ostream>
+
+namespace MeterDistance {
+ class Distance {
+ public:
+    Distance (double i) : meter(i) {}
+
+     friend std::ostream& operator << (std::ostream& out, const Distance &a){
+         out << a.meter << " m";
+         return out;
+     }
+
+ private:
+     double meter;
+ };
+
+ namespace Unit {
+ Distance operator ""_km(long double d){
+     return Distance(d * 1000);
+ }
+ }
+}
+
+using MeterDistance::Distance;
+using namespace MeterDistance::Unit;
+
+int main()
+{
+    Distance d(1.0_km);
+    std::cout << d << std::endl;
+}
+```
+
+<br />
+
+#### Output
+
+<br />
+
+```
+1000 m
+```
+
+In the next episode we will look at enumerators and pointers.
