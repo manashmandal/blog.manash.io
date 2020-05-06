@@ -3,7 +3,7 @@
 <url> <loc>https://blog.manash.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.manash.io/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.manash.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://blog.manash.io/cpp-notes-part-1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.manash.io/cpp-notes-part-1-literals</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.manash.io/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.manash.io/tags/c</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
